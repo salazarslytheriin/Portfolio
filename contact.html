@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Yahya Sahnoun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">YS<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta active">Let's Talk</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Let's Talk</a>
+  </div>
+
+  <section class="contact-hero">
+    <div class="contact-hero-text">
+      <p class="section-label">Contact</p>
+      <h1>Let's build something<br>that grows.</h1>
+      <p>Available for remote freelance projects, long-term contracts, and full-time remote roles. Strong overlap with US, European, and MENA time zones.</p>
+
+      <div class="contact-details">
+        <a href="mailto:yahya.sahnoun@email.com" class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">yahyasahnoun0@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/yahya-sahnoun-2b36b5278/" target="_blank" class="contact-item">
+          <span class="contact-icon">💼</span>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/yahyasahnoun</span>
+          </div>
+        </a>
+        <div class="contact-item">
+          <span class="contact-icon">🌍</span>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Fes, Morocco · Remote Worldwide</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🗣️</span>
+          <div>
+            <span class="contact-label">Languages</span>
+            <span class="contact-value">English · Arabic · French</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">I'm interested in...</label>
+          <select id="service">
+            <option value="">Select a service</option>
+            <option>Email Marketing (Klaviyo)</option>
+            <option>Paid Advertising (Meta / Google)</option>
+            <option>SEO & Content</option>
+            <option>Shopify / E-Commerce</option>
+            <option>Social Media Management</option>
+            <option>Full-Stack Digital Marketing</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="budget">Budget Range</label>
+          <select id="budget">
+            <option value="">Select budget range</option>
+            <option>Under $500/mo</option>
+            <option>$500 – $1,000/mo</option>
+            <option>$1,000 – $2,500/mo</option>
+            <option>$2,500 – $5,000/mo</option>
+            <option>$5,000+/mo</option>
+            <option>One-time project</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell me about your project</label>
+          <textarea id="message" rows="5" placeholder="Share your goals, current challenges, and what success looks like for you..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Send Message →</button>
+        <p class="form-note">I usually reply within 24 hours.</p>
+      </form>
+      <div class="form-success" id="formSuccess" style="display:none;">
+        <div class="success-icon">✅</div>
+        <h3>Message sent!</h3>
+        <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom" style="border-top: 1px solid var(--border); padding-top: 2rem;">
+      <p>© 2026 Yahya Sahnoun · Fes, Morocco · Remote Worldwide</p>
+      <p class="footer-langs">🇲🇦 Arabic &nbsp;·&nbsp; 🇬🇧 English &nbsp;·&nbsp; 🇫🇷 French</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

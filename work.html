@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Yahya Sahnoun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">YS<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Let's Talk</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <p class="section-label">My Work</p>
+    <h1>Results That Speak</h1>
+    <p class="page-hero-sub">Case studies and campaigns from 4+ years in digital marketing. Real data, real growth.</p>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="email">Email</button>
+      <button class="filter-btn" data-filter="ads">Paid Ads</button>
+      <button class="filter-btn" data-filter="seo">SEO</button>
+      <button class="filter-btn" data-filter="social">Social</button>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="section case-studies">
+
+    <!-- CASE STUDY 1 -->
+    <article class="case-study" id="email" data-category="email">
+      <div class="case-header">
+        <span class="tag">Email Marketing · Klaviyo</span>
+        <h2>E-Commerce Email Revenue Engine Built from Zero</h2>
+        <p class="case-intro">Architected and launched a complete Klaviyo email program for my Shopify store — 7 automated flows, full campaign calendar, list segmentation, and deliverability infrastructure.</p>
+      </div>
+
+      <div class="case-metrics-bar">
+        <div class="case-metric">
+          <span class="metric-num">35%</span>
+          <span class="metric-label">Retention Uplift</span>
+        </div>
+        <div class="case-metric">
+          <span class="metric-num">95%+</span>
+          <span class="metric-label">Inbox Placement</span>
+        </div>
+        <div class="case-metric">
+          <span class="metric-num">7</span>
+          <span class="metric-label">Automated Flows</span>
+        </div>
+      </div>
+
+      <!-- MEDIA GALLERY -->
+      <div class="case-gallery">
+        <div class="gallery-main">
+          <!-- REPLACE: Screenshot of Klaviyo dashboard / flows map -->
+          <div class="media-placeholder tall">
+            <div class="placeholder-icon">📧</div>
+            <p>Klaviyo Flows Dashboard Screenshot</p>
+            <span class="placeholder-hint">Add a screenshot of your Klaviyo automation flows<br>Recommended: 1400×900px · Replace src in &lt;img&gt; tag</span>
+            <!-- TO USE: replace this div with: <img src="assets/klaviyo-flows.png" alt="Klaviyo Flows"> -->
+          </div>
+        </div>
+        <div class="gallery-side">
+          <!-- REPLACE: Email design screenshot 1 -->
+          <div class="media-placeholder">
+            <div class="placeholder-icon">✉️</div>
+            <p>Welcome Email Design</p>
+            <span class="placeholder-hint">600×700px</span>
+          </div>
+          <!-- REPLACE: Email design screenshot 2 -->
+          <div class="media-placeholder">
+            <div class="placeholder-icon">🛒</div>
+            <p>Abandoned Cart Email</p>
+            <span class="placeholder-hint">600×700px</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO PLACEHOLDER -->
+      <div class="video-placeholder">
+        <div class="video-icon">▶</div>
+        <p>Walkthrough: Email Flow Setup & Strategy</p>
+        <span class="placeholder-hint">Add a Loom / YouTube video URL here · Replace &lt;div&gt; with &lt;iframe&gt;</span>
+        <!-- TO USE: replace with: <iframe src="https://www.youtube.com/embed/YOUR_ID" ...></iframe> -->
+      </div>
+
+      <div class="case-body">
+        <div class="case-col">
+          <h4>Challenge</h4>
+          <p>Starting from zero with no existing email list or automation infrastructure. Needed to build a system that recovers lost revenue and nurtures customers into repeat buyers.</p>
+        </div>
+        <div class="case-col">
+          <h4>Solution</h4>
+          <p>Built a 7-flow Klaviyo system: Welcome Series, Abandoned Cart, Browse Abandonment, Post-Purchase, Win-Back, VIP, and Sunset. Configured SPF/DKIM/DMARC for inbox placement.</p>
+        </div>
+        <div class="case-col">
+          <h4>Results</h4>
+          <p>35% customer retention uplift. Over 95% inbox placement rate. Abandoned cart flow became top revenue driver within 30 days of launch.</p>
+        </div>
+      </div>
+
+      <div class="tech-used">
+        <span>Klaviyo</span><span>Shopify</span><span>SPF/DKIM/DMARC</span><span>MXToolbox</span><span>A/B Testing</span>
+      </div>
+    </article>
+
+    <div class="case-divider"></div>
+
+    <!-- CASE STUDY 2 -->
+    <article class="case-study" id="ads" data-category="ads social">
+      <div class="case-header">
+        <span class="tag">Paid Ads · Social Media</span>
+        <h2>0 → 5,000+ Followers with 40% Engagement Growth</h2>
+        <p class="case-intro">Built and scaled a multi-platform social media presence from scratch — combining organic content strategy with Meta Ads for accelerated growth and strong ROAS.</p>
+      </div>
+
+      <div class="case-metrics-bar">
+        <div class="case-metric">
+          <span class="metric-num">5K+</span>
+          <span class="metric-label">Followers Grown</span>
+        </div>
+        <div class="case-metric">
+          <span class="metric-num">40%</span>
+          <span class="metric-label">Engagement Growth</span>
+        </div>
+        <div class="case-metric">
+          <span class="metric-num">Strong</span>
+          <span class="metric-label">ROAS Achieved</span>
+        </div>
+      </div>
+
+      <div class="case-gallery">
+        <div class="gallery-main">
+          <!-- REPLACE: Meta Ads Manager results screenshot -->
+          <div class="media-placeholder tall">
+            <div class="placeholder-icon">📢</div>
+            <p>Meta Ads Manager — Campaign Results Screenshot</p>
+            <span class="placeholder-hint">Add a blurred/anonymized Ads Manager screenshot<br>Recommended: 1400×900px</span>
+          </div>
+        </div>
+        <div class="gallery-side">
+          <!-- REPLACE: Content sample / creative -->
+          <div class="media-placeholder">
+            <div class="placeholder-icon">🖼️</div>
+            <p>Ad Creative Sample</p>
+            <span class="placeholder-hint">1080×1080px or 9:16</span>
+          </div>
+          <!-- REPLACE: Instagram/TikTok analytics screenshot -->
+          <div class="media-placeholder">
+            <div class="placeholder-icon">📊</div>
+            <p>Instagram Insights Screenshot</p>
+            <span class="placeholder-hint">600×700px</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO PLACEHOLDER -->
+      <div class="video-placeholder">
+        <div class="video-icon">▶</div>
+        <p>Video: Social Media Content Strategy Overview</p>
+        <span class="placeholder-hint">Add a TikTok / Reel / Loom video here</span>
+      </div>
+
+      <div class="case-body">
+        <div class="case-col">
+          <h4>Challenge</h4>
+          <p>Zero social presence, zero budget history, and competitive product categories. Needed to build brand awareness and a converting audience fast.</p>
+        </div>
+        <div class="case-col">
+          <h4>Solution</h4>
+          <p>Organic-first content strategy across Instagram, TikTok, YouTube, and Facebook — then amplified top-performing content with Meta Ads using lookalike + retargeting audiences.</p>
+        </div>
+        <div class="case-col">
+          <h4>Results</h4>
+          <p>Grew to 5,000+ followers with 40% monthly engagement increase. Meta Ads delivered strong ROAS through creative testing and iterative audience refinement.</p>
+        </div>
+      </div>
+
+      <div class="tech-used">
+        <span>Meta Ads Manager</span><span>Google Ads</span><span>TikTok</span><span>Instagram</span><span>Canva</span><span>GA4</span>
+      </div>
+    </article>
+
+    <div class="case-divider"></div>
+
+    <!-- CASE STUDY 3 -->
+    <article class="case-study" id="seo" data-category="seo">
+      <div class="case-header">
+        <span class="tag">SEO · Shopify Optimization</span>
+        <h2>50% Organic Traffic Growth via Technical SEO</h2>
+        <p class="case-intro">Full SEO audit and implementation on a Shopify store — keyword research, on-page optimization, page speed improvements, and structured data driving sustained organic traffic growth.</p>
+      </div>
+
+      <div class="case-metrics-bar">
+        <div class="case-metric">
+          <span class="metric-num">50%</span>
+          <span class="metric-label">Traffic Growth</span>
+        </div>
+        <div class="case-metric">
+          <span class="metric-num">↑↑</span>
+          <span class="metric-label">Page Speed Score</span>
+        </div>
+        <div class="case-metric">
+          <span class="metric-num">Top 3</span>
+          <span class="metric-label">Keyword Rankings</span>
+        </div>
+      </div>
+
+      <div class="case-gallery">
+        <div class="gallery-main">
+          <!-- REPLACE: Google Search Console traffic graph -->
+          <div class="media-placeholder tall">
+            <div class="placeholder-icon">📈</div>
+            <p>Google Search Console — Traffic Growth Chart</p>
+            <span class="placeholder-hint">Add a screenshot of your GSC performance graph<br>Recommended: 1400×900px</span>
+          </div>
+        </div>
+        <div class="gallery-side">
+          <!-- REPLACE: PageSpeed score before/after -->
+          <div class="media-placeholder">
+            <div class="placeholder-icon">⚡</div>
+            <p>PageSpeed Insights Score</p>
+            <span class="placeholder-hint">600×400px</span>
+          </div>
+          <!-- REPLACE: Keyword rankings screenshot -->
+          <div class="media-placeholder">
+            <div class="placeholder-icon">🔑</div>
+            <p>Keyword Rankings Screenshot</p>
+            <span class="placeholder-hint">600×700px</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-body">
+        <div class="case-col">
+          <h4>Challenge</h4>
+          <p>Shopify store with minimal SEO optimization, slow load times, and no structured data. Organic traffic was negligible despite quality products.</p>
+        </div>
+        <div class="case-col">
+          <h4>Solution</h4>
+          <p>Complete SEO audit → keyword gap analysis → on-page optimization of all product/collection pages → image compression + lazy loading + Core Web Vitals fixes → schema markup implementation.</p>
+        </div>
+        <div class="case-col">
+          <h4>Results</h4>
+          <p>50% organic traffic growth over 90 days. Significant improvement in Core Web Vitals scores. Multiple target keywords moved to page 1 positions.</p>
+        </div>
+      </div>
+
+      <div class="tech-used">
+        <span>Google Search Console</span><span>GA4</span><span>Shopify</span><span>Ahrefs/Semrush</span><span>PageSpeed</span><span>Schema Markup</span>
+      </div>
+    </article>
+
+    <div class="case-divider"></div>
+
+    <!-- CASE STUDY 4 - Vitel -->
+    <article class="case-study" id="vitel" data-category="ads">
+      <div class="case-header">
+        <span class="tag">Paid Ads · Strategy · Remote / USA</span>
+        <h2>30%+ Campaign Improvement for US-Based Client</h2>
+        <p class="case-intro">As Marketing Manager at Vitel, developed and managed full digital marketing strategy including paid campaigns, social media, SEO, and email — improving results by 30%+ through data-driven optimization.</p>
+      </div>
+
+      <div class="case-metrics-bar">
+        <div class="case-metric">
+          <span class="metric-num">30%+</span>
+          <span class="metric-label">Results Improvement</span>
+        </div>
+        <div class="case-metric">
+          <span class="metric-num">↓</span>
+          <span class="metric-label">Cost Per Lead</span>
+        </div>
+        <div class="case-metric">
+          <span class="metric-num">↑</span>
+          <span class="metric-label">ROI</span>
+        </div>
+      </div>
+
+      <div class="case-gallery single">
+        <!-- REPLACE: Google Ads / campaign performance screenshot -->
+        <div class="media-placeholder wide">
+          <div class="placeholder-icon">🇺🇸</div>
+          <p>Campaign Performance Dashboard — Vitel</p>
+          <span class="placeholder-hint">Add a GA4 or Ads Manager screenshot (anonymized is fine)<br>Recommended: 1400×700px</span>
+        </div>
+      </div>
+
+      <div class="case-body">
+        <div class="case-col">
+          <h4>Challenge</h4>
+          <p>US-based client with existing campaigns that were underperforming. Needed full-funnel strategy restructure and budget reallocation.</p>
+        </div>
+        <div class="case-col">
+          <h4>Solution</h4>
+          <p>Rebuilt Google Ads and Facebook/Instagram Ads structure. Developed content calendar, SEO plan, and email campaigns. Implemented A/B testing framework across all channels.</p>
+        </div>
+        <div class="case-col">
+          <h4>Results</h4>
+          <p>30%+ improvement across key performance metrics within the engagement period through systematic A/B testing and data-driven optimization via GA4.</p>
+        </div>
+      </div>
+
+      <div class="tech-used">
+        <span>Google Ads</span><span>Facebook Ads</span><span>GA4</span><span>A/B Testing</span><span>Email Marketing</span>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-cta">
+        <h2>Ready to grow<br>your brand?</h2>
+        <a href="contact.html" class="btn-primary">Get in touch</a>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="footer-col-title">Pages</p>
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Connect</p>
+          <a href="mailto:yahyasahnoun0@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/yahya-sahnoun-2b36b5278/" target="_blank">LinkedIn</a>
+          <a href="https://www.upwork.com/freelancers/~017ba4b4fc12a788f9" target="_blank">Upwork</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Yahya Sahnoun · Fes, Morocco · Remote Worldwide</p>
+      <p class="footer-langs">🇲🇦 Arabic &nbsp;·&nbsp; 🇬🇧 English &nbsp;·&nbsp; 🇫🇷 French</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
