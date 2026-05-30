@@ -74,6 +74,7 @@ if (filterBtns.length) {
 // ──  });
 // ──}
 // ── CONTACT FORM (Formspree Integration)
+// ── CONTACT FORM (Formspree Integration)
 const form = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
@@ -84,6 +85,44 @@ if (form && formSuccess) {
     const submitButton = form.querySelector('button[type="submit"]');
     const originalButtonText = submitButton.textContent;
 
+    // Loading state
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+
+    // Submit to Formspree
+    fetch('https://formspree.io/f/mreddorj', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        showSuccess();
+      } else {
+        throw new Error('Submission failed');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Something went wrong. Please try again or email me directly at yahyasahnoun0@gmail.com');
+      
+      // Reset button
+      submitButton.textContent = originalButtonText;
+      submitButton.disabled = false;
+    });
+  });
+}
+
+// Show success message
+function showSuccess() {
+  form.style.display = 'none';
+  formSuccess.style.display = 'block';
+  
+  // Optional: Scroll smoothly to success message
+  formSuccess.scrollIntoView({ behavior: 'smooth' });
+}
 
 
 // ── SMOOTH ANCHOR SCROLL
